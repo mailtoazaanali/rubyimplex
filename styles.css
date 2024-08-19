@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    color: #b85c5c;
+}
+
+#home img,
+#gallery img {
+    border: 2px solid #b85c5c;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#home img:hover,
+#gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#map {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: #b85c5c !important;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #b85c5c !important;
+}
+
+.btn-primary {
+    background-color: #b85c5c;
+    border-color: #b85c5c;
+}
+
+.btn-primary:hover {
+    background-color: #d47474;
+    border-color: #d47474;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Common styles for the image and title */
+.position-relative {
+    display: inline-block;
+}
+
+.image-with-title {
+    border: 2px solid #b85c5c; /* Example border color, can be changed */
+    border-radius: 10px;
+    width: 100%; /* Ensures the image fits within its container */
+}
+
+.image-title {
+    position: absolute;
+    bottom: 0;
+    left: 5;
+    width: 93%;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgba(200, 200, 200, 0.2); /* Semi-transparent background */
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Specific styles for each title color */
+.diamond-title {
+    color: #b9f2ff; /* Diamond-like color (light blue) */
+}
+
+.gold-title {
+    color: #ffd700; /* Gold color */
+}
+
+.silver-title {
+    color: #c0c0c0; /* Silver color */
+}
+
+img {
+    height: 800px;
+    width: 677px;
+}
