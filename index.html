@@ -6,66 +6,106 @@
     <title>Ruby Impex Co. LTD - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+<!-- Custom CSS -->
+<style>
+    .custom-nav-link {
+        font-size: 1.25rem; /* Larger text */
+        font-weight: bold; /* Bold text */
+        color: #0056b3; /* Custom color */
+        margin-right: 50px;
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    }
+    
+    .custom-nav-link:hover {
+        color: #28a745; /* Change color on hover */
+        transform: scale(1.2); /* Slightly enlarge on hover */
+    }
+    
+    .navbar-nav .nav-link.active {
+        color: #28a745 !important; /* Active link color */
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: #f8f9fa; /* Custom dropdown background */
+        border-radius: 0.5rem; /* Rounded corners */
+    }
+
+    .navbar-nav .dropdown-item:hover {
+        background-color: #28a745; /* Highlight dropdown item on hover */
+        color: #fff; /* Change text color on hover */
+    }
+</style>
+
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="home.html">Ruby Impex Co. LTD</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Gallery
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
-                            <li><a class="dropdown-item" href="gallery.html#diamond">Diamond</a></li>
-                            <li><a class="dropdown-item" href="gallery.html#gold">Gold</a></li>
-                            <li><a class="dropdown-item" href="gallery.html#silver">Silver</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.html">Contact Us</a>
-                    </li>
-                </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" class="img-fluid" style="height: 175px; width: 175px;">
+        </a>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="card w-100">
+                <div class="card-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active custom-nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                <li><a class="dropdown-item" href="galleryDiamond.html">Diamond</a></li>
+                                <li><a class="dropdown-item" href="galleryGold.html">Gold</a></li>
+                                <li><a class="dropdown-item" href="gallerySilver.html">Silver</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <!-- Home Section -->
     <section id="home" class="container mt-5">
         <h1 class="text-center">Welcome to Ruby Impex Co. LTD</h1>
-        <p class="text-center">We specialize in Gold, Silver, and Diamond jewelry.</p>
+        <p class="text-center">We specialize in Gold Jewelry with Diamond and Natural stones,</br> 925 Silver jewelry with Moissanite and Natural Stones.</p>
         <div class="row">
 
             <!-- Sample Jewelry Images -->
 
             <div class="col-md-4 position-relative text-center">
-                <a href="gallery.html#diamond">
+                <a href="galleryDiamond.html">
                     <img src="images/diamond/image1.png" alt="Diamond Jewelry Image" class="img-fluid image-with-title">
                 </a>
                 <p class="image-title diamond-title">Diamond</p>
             </div>
 
             <div class="col-md-4 position-relative text-center">
-                <a href="gallery.html#gold">
+                <a href="galleryGold.html">
                     <img src="images/gold/image1.png" alt="Gold Jewelry Image" class="img-fluid image-with-title">
                 </a>
                 <p class="image-title gold-title">Gold</p>
             </div>
 
             <div class="col-md-4 position-relative text-center">
-                <a href="gallery.html#silver">
+                <a href="gallerySilver.html">
                     <img src="images/silver/ring1.png" alt="Silver Jewelry Image" class="img-fluid image-with-title">
                </a>
                 <p class="image-title silver-title">Silver</p>
@@ -77,14 +117,62 @@
         </div>
     </br>
 
-
-        <div class="text-center mt-4">
-            <div id="map"></div>
-            <p><strong>Address:</strong> 1179/39-40, Charoen Krung 47, Si Phraya, Bangrak, Bangkok, Thailand - 10500</p>
-            <p><strong>Tel:</strong> +66 - 6313980, +66 - 804195160</p>
-            
-        </div>
     </section>
+
+
+
+<section id="contact" class="container mt-5 mb-5">
+    <div class="mt-4">
+        
+        <!-- Phone Numbers -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h3 class="card-title mb-0">Phone No:</h3>
+            </div>
+            <div class="card-body text-start">
+                <ul class="list-unstyled">
+                    <li>+66 - 951091503</li>
+                    <li>+66 - 6313980</li>
+                    <li>+66 - 804195160</li>
+                </ul>
+            </div>
+        </div>
+
+         <!-- Email Address -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h3 class="card-title mb-0">Email Address</h3>
+            </div>
+            <div class="card-body text-start">
+                <ul class="list-unstyled">
+                    <li>Not Available</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h3 class="card-title mb-0">Address:</h3>
+            </div>
+            <div class="card-body text-start">
+                <p>1179/39-40, Charoen Krung 47, Si Phraya, Bangrak, Bangkok, Thailand - 10500</p>
+                <h2>Find Us Here</h2>
+                <div class="card-body text-start">
+                <a href="https://maps.app.goo.gl/pNmV6U9NMVi8a8XE9" target="_blank">
+                    <img src="images/map.png" alt="Our Location" class="img-fluid rounded shadow-sm">
+                </a>
+            </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+</section>
+
+
+
 
     <!-- Footer -->
     <footer class="text-center mt-5">
